@@ -431,8 +431,10 @@ void ImageLoader::compress(const std::string& path, const cv::Mat& image, int ma
     writeUint8(ofs, static_cast<std::uint8_t>(channels));
 
     for (int ch = 0; ch < channels; ++ch) {
+        // Write Huffman table lengths
         const auto& table = tables[static_cast<std::size_t>(ch)];
         ofs.write(reinterpret_cast<const char*>(table.lengths.data()), static_cast<std::streamsize>(table.lengths.size()));
+        // Write encoded data size and data
         const auto& data = encodedChannels[static_cast<std::size_t>(ch)];
         writeUint32(ofs, static_cast<std::uint32_t>(data.size()));
         if (!data.empty()) {
