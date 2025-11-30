@@ -1,8 +1,8 @@
 # Project 3 实验报告
 
-学号：24344064
-姓名：廖海涛
-项目地址：[https://github.com/lingfunny/imgcompress](https://github.com/lingfunny/imgcompress)
+- 学号：24344064
+- 姓名：廖海涛
+- 项目地址：[https://github.com/lingfunny/imgcompress](https://github.com/lingfunny/imgcompress)
 
 ## 程序功能简要说明
 
