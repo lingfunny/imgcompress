@@ -104,11 +104,11 @@ HuffmanTable buildCanonicalTable(const std::array<std::uint8_t, 256>& lengths) {
 
 ## 程序运行方式简要说明
 
-本项目基于 CMake 构建系统，依赖 OpenCV 库。请确保系统中已安装 OpenCV。
+本项目基于 CMake 构建系统，依赖 OpenCV 库。
 
 ### 环境依赖
 
-- C++17 编译器 (GCC/Clang/MSVC)
+- C++17 编译器
 - CMake >= 3.10
 - OpenCV (用于图像 I/O)
 
